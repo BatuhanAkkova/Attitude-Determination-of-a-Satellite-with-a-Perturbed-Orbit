@@ -24,11 +24,9 @@ w0 = [0.0011 0.0012 0.0013]; % Initial angular velocities for ode
 q0 = [0 0.018 0.009 0.045]; % Initial quaternion for ode
 q0(1) = sqrt(1 - q0(2)^2 - q0(3)^2 - q0(4)^2); % Scalar part of the quaternion 
 
-% Selected magnetometer: https://www.satnow.com/products/magnetometers/antrix-corporation-limited/40-1183-digital-miniature-magnetometer
 noise_mag = randn; % Normally distributed scalar number for creating noise
 deviation_mag = 0.003; % Non-linearity of our magnetometer
 
-% Selected sun sensor: https://www.aac-clyde.space/what-we-do/space-products-components/adcs/ss200
 noise_sun = randn; % Normally distributed scalar number for creating noise
 deviation_sun = 0.002;
 
@@ -44,3 +42,4 @@ J6 = -0.6083/10^8;
 % Satellite Physical, 1kg 10x10x10 cm
 m = 1;
 A = 0.1*0.1;
+
