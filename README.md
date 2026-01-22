@@ -1,9 +1,9 @@
 # Attitude-Determination-of-a-Satellite-with-a-Perturbed-Orbit
 This repository contains my MATLAB codes for my Bachelor Thesis. It calculates the perturbations of a satellite orbiting Earth using the formulation of Encke. Then it calculates the attitude determination via QUEST method. Lastly it calculates the RMS error for the attitude determination.
 
-Initial Values contains all the initial parameters used in the code and thesis.
+initial_values.m contains all the initial parameters used in the code and thesis.
 
-Main is the (obviously) the main code to run the complete simulation.
+main.m is the main code to run the complete simulation.
 
 The Abstract of my thesis is given below:
 
